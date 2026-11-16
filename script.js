@@ -24,15 +24,3 @@ function validateForm() {
     return false;
 }
 
-function changeBackgroundColor() {
-    const colors = ['#111927', '#271111', '#162711', '#1f1627'];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor;
-}
-
-function addParagraph() {
-    const newPara = document.createElement('p');
-    newPara.innerText = "Cinematic frame loaded dynamically.";
-    newPara.style.color = "#888";
-    document.getElementById('dynamicContent').appendChild(newPara);
-}
